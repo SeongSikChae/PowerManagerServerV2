@@ -43,8 +43,10 @@ openssl x509 -in "클라이언트 인증서 CRT 파일 경로" -noout -fingerpri
 0 0 0 1 9 ? // 매년 9월 1일에 - 2023-09-01 00:00:00, 2024-09-01 00:00:00, 2025-09-01 00:00:00, ...
 0 0 0 ? * 2-6 // 매주 월요일에서 금요일 0시에
 0 0 0 1 1 ? 2023 // 2023년 1월 1일 0시 0분 0초
+```
 
 ## IncludeCipherSuites 설정 방법
+
 ```
 IncludeCipherSuites:
   - "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
