@@ -5,7 +5,7 @@
 ### V1.0.0 - 4ddf6ec1 (Pre Release)
 
 * 서버 종료 시 스케줄에 설정된 On/Off 동작이 일괄로 실행되버리는 Bug Fix
-* 우층 상단에 사용자 프로필 팝업 실행 시 클라이언트 인증서에 Email 정보가 누락되어 있을경우 Error 발생되는 Bug Fix
+* 우측 상단에 사용자 프로필 팝업 실행 시 클라이언트 인증서에 Email 정보가 누락되어 있을경우 Error 발생되는 Bug Fix
 * Sqlite DB 및 Level DB 사용 시 비효율적인 Thread Locking 최적화
 
 ### V1.0.0 - d7c7adfa (Pre Release)
