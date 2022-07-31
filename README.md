@@ -2,6 +2,15 @@
 
 ## history
 
+### V1.0.0 - f62ed28d (Pre Release)
+
+* 분 단위 전력량 추가
+* 분, 시간, 일 단위 온도 추가
+* 통계 Segment가 많아졌을 때 LevelDB에 Segment을 찾는 과정에서 과다한 CPU 사용이 발생됨에 따라 LevelDB를 제거 후 InMemory 자료 구조를 통한 통계 처리로 변경 
+* 1분 단위 및 서버 종료 시 InMemory 통계 데이터를 Persistent File로 기록
+* 서버 기동 시 Persistent 통계 데이터를 InMemory로 Load
+* P.S 서버 강제 종료 시 마지막 기록한 통계 데이터 이후에 발생된 세그먼트는 유실
+
 ### V1.0.0 - 4ddf6ec1 (Pre Release)
 
 * 서버 종료 시 스케줄에 설정된 On/Off 동작이 일괄로 실행되버리는 Bug Fix
