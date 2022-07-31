@@ -2,6 +2,11 @@
 
 ## history
 
+### V1.0.0 - 449885d5
+
+* 온도 수치를 잘못계산하는 버그 fix
+* Persistent File이 없을 때 Crash 나는 버그 Fix
+
 ### V1.0.0 - f62ed28d (Pre Release)
 
 * 분 단위 전력량 추가
