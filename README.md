@@ -72,4 +72,6 @@ openssl x509 -in "클라이언트 인증서 CRT 파일 경로" -noout -fingerpri
 IncludeCipherSuites:
   - "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
   - "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
+  - "TLS_RSA_WITH_AES_256_CBC_SHA256"
+  - "TLS_RSA_WITH_AES_128_CBC_SHA256"
 ```
