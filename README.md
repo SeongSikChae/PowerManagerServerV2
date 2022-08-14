@@ -2,6 +2,13 @@
 
 ## history
 
+### V1.0.1 - e1d011ae
+
+* 분별, 시간별 전압 통계 추가
+* 분별 전력량 Watt 단위 표기 오류 Fix
+* 제어 Web 요청 Cipher Suite 와 플러그 API 인증 Cipher Suite White List를 분리 조치
+* 알림 규칙 추가, 미수신 알림 필터 추가, 전력량 필터 추가
+
 ### V1.0.0 - 449885d5
 
 * 온도 수치를 잘못계산하는 버그 fix
