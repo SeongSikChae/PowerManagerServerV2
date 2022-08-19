@@ -2,6 +2,11 @@
 
 ## history
 
+### V1.0.2 - fcb8758f
+
+* 권한 없는 Topic Message를 Publish 하거나 Subscribe 할 수 있는 보안 취약점 fix
+* 외부 MQTT 로 플러그 상태 정보를 Forwarding 할 수 있는 기능 추가
+
 ### V1.0.1 - e1d011ae
 
 * 분별, 시간별 전압 통계 추가
