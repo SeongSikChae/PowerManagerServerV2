@@ -2,6 +2,11 @@
 
 ## history
 
+### V1.0.0 - 56f20e8f
+
+* Forwarding 시 Result 가 없는데도 Topic Message 가 전달되는 문제 fix
+* Forwarding 시 소숫점 자리수 Format 지정
+
 ### V1.0.0 - fcb8758f
 
 * 권한 없는 Topic Message를 Publish 하거나 Subscribe 할 수 있는 보안 취약점 fix
