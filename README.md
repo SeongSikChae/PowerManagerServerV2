@@ -2,6 +2,11 @@
 
 ## history
 
+### V1.0.0 - 343f5a57
+
+* DAWONDNS로 Forwarding 할 수 있는 Connector 추가
+* 장비에 Connector 등록 시 반영되지 않는 bug fix
+
 ### V1.0.0 - 56f20e8f
 
 * Forwarding 시 Result 가 없는데도 Topic Message 가 전달되는 문제 fix
