@@ -2,6 +2,12 @@
 
 ## history
 
+### V1.0.0 - dc635973
+
+* DAWONDNS Connector Forward 시 Suppressor 추가 (기본값 60초)
+* ForwardSuppressTime 설정 추가 (DAWONDNS Connector Forward Suppressor 의 Suppress 시간)
+* MQTT Connector 활성 여부 추가
+
 ### V1.0.0 - 343f5a57
 
 * DAWONDNS로 Forwarding 할 수 있는 Connector 추가
@@ -63,7 +69,7 @@
 * HTTP2: HTTP2 프로토콜 여부 (기본값: false)
 * IncludeCipherSuites: HTTPS 암호화 수준 Whitelist (옵션)
 * TelegramToken: 텔레그램 봇 Token (옵션)
-
+* ForwardSuppressTime: DAWONDNS Connector Suppressor의 Suppress 시간 (기본값: 60)(초)
 
 ## AdminThumbprint 값 입력법
 
