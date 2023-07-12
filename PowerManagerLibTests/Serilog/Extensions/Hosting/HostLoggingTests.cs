@@ -45,14 +45,14 @@ namespace Serilog.Extensions.Hosting.Tests
 
             public Task StartAsync(CancellationToken cancellationToken)
             {
-                logger.LogInformation("Start");
+                logger.Information("Start");
                 countdown.Signal();
                 return Task.CompletedTask;
             }
 
             public Task StopAsync(CancellationToken cancellationToken)
             {
-                logger.LogInformation("Stop");
+                logger.Information("Stop");
                 return Task.CompletedTask;
             }
         }
