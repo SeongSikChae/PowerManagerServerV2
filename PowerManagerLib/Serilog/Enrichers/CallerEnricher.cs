@@ -43,6 +43,16 @@
                         break;
                     if (t.FullName.Equals(className))
                         break;
+                    if (className is not null)
+                    {
+                        int lastIndex = className.LastIndexOf('.');
+                        string f = className.Substring(0, lastIndex);
+                        string l = className.Substring(lastIndex + 1);
+                        string className2 = $"{f}+{l}";
+                        if (t.FullName.Equals(className2))
+                            break;
+                    }
+                    
                     stackFrame = stackTrace?.GetFrame(_frame++);
                 } while (true);
                 string method_name = "<unknown method>";
