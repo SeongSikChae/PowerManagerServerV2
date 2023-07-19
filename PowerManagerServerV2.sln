@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerManagerLib", "PowerMan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerManagerLibTests", "PowerManagerLibTests\PowerManagerLibTests.csproj", "{DCFEF02A-5DD3-4E5F-B03F-0D4BE5A26B0E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerManagerServer", "PowerManagerServer\PowerManagerServer.csproj", "{30D36C64-B796-4620-95FD-4AC1DAB872ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DCFEF02A-5DD3-4E5F-B03F-0D4BE5A26B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFEF02A-5DD3-4E5F-B03F-0D4BE5A26B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFEF02A-5DD3-4E5F-B03F-0D4BE5A26B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D36C64-B796-4620-95FD-4AC1DAB872ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D36C64-B796-4620-95FD-4AC1DAB872ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D36C64-B796-4620-95FD-4AC1DAB872ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D36C64-B796-4620-95FD-4AC1DAB872ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

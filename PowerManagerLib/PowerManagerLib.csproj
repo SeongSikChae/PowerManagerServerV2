@@ -1,18 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RootNamespace>System</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>System</RootNamespace>
+		<Revision></Revision>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Quartz" Version="3.6.3" />
-    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
-    <PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
-    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
-    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Quartz" Version="3.6.3" />
+		<PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	</ItemGroup>
 
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+		<Exec Command="git describe --long --always --exclude=* --abbrev=8" ConsoleToMSBuild="true">
+			<Output PropertyName="Revision" TaskParameter="ConsoleOutput" />
+		</Exec>
+	</Target>
+
+	<Target Name="SetRevision" AfterTargets="PreBuild">
+		<ItemGroup>
+			<AssemblyAttribute Include="PowerManagerLib.Revision">
+				<_Parameter1>$(Revision)</_Parameter1>
+			</AssemblyAttribute>
+		</ItemGroup>
+	</Target>
 </Project>
+
