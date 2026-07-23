@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "commandLineArgs": "--config /PowerManager/config.yml --log /PowerManager/log",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:50443"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

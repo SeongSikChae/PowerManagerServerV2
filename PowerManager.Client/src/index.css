@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+  --color-sb-primary: #4e73df;
+  --color-sb-primary-dark: #2e59d9;
+  --color-sb-success: #1cc88a;
+  --color-sb-info: #36b9cc;
+  --color-sb-warning: #f6c23e;
+  --color-sb-danger: #e74a3b;
+  --color-sb-secondary: #858796;
+  --color-sb-light: #f8f9fc;
+  --color-sb-dark: #5a5c69;
+  --color-sb-sidebar: #224abe;
+  --color-sb-sidebar-dark: #1a3a9c;
+  --color-sb-border: #e3e6f0;
+  --color-sb-card: #ffffff;
+  --color-sb-muted: #858796;
+
+  --color-background: #f8f9fc;
+  --color-foreground: #5a5c69;
+  --color-card: #ffffff;
+  --color-card-foreground: #5a5c69;
+  --color-primary: #4e73df;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #858796;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #f8f9fc;
+  --color-muted-foreground: #858796;
+  --color-accent: #eaecf4;
+  --color-accent-foreground: #5a5c69;
+  --color-destructive: #e74a3b;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e3e6f0;
+  --color-input: #d1d3e2;
+  --color-ring: #4e73df;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.35rem;
+  --radius-lg: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    margin: 0;
+  }
+}

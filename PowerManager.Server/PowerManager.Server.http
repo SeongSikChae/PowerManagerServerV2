@@ -1,0 +1,26 @@
+@PowerManager.Server_HostAddress = https://localhost:50443
+
+GET {{PowerManager.Server_HostAddress}}/api/v1/device/connect/DAWONDNS-B540_W-365f45501f96
+Accept: application/json
+
+###
+
+GET {{PowerManager.Server_HostAddress}}/rest/auth/whoami
+Accept: application/json
+
+###
+
+POST {{PowerManager.Server_HostAddress}}/rest/device/list
+Accept: application/json
+{
+  "Pagination": {
+    "CurrentPage": 1,
+    "ItemSize": 15
+  }
+}
+###
+
+GET {{PowerManager.Server_HostAddress}}/rest/weatherforecast/
+Accept: application/json
+
+###

@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="PowerManager.Server/PowerManager.Server.csproj" />
+</Solution>
